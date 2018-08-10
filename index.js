@@ -9,7 +9,7 @@ const payload = {
 
 //Automatically creates header, and returns JWT
 const token = jwt.sign(payload, config.APISecret);
-
+console.log("token: " + token);
 
 var options = {
     uri: 'https://api.zoom.us/v2/users', //Zoom API
